@@ -35,4 +35,7 @@ jobs:
             downloads/themes/goldenfield.zip \
             downloads/themes/SHA256SUMS.txt \
             --clobber
+          REL_ID=$(gh api repos/$GITHUB_REPOSITORY/releases/tags/themes-1 --jq .id)
+          gh api -X PATCH repos/$GITHUB_REPOSITORY/releases/$REL_ID -F make_latest=false >/dev/null
+          echo "latest now: $(gh api repos/$GITHUB_REPOSITORY/releases/latest --jq .tag_name)"
           gh release view themes-1 --json url,assets --jq '.url, (.assets[] | "\(.name) \(.size)")'
