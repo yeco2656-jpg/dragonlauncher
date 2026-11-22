@@ -1,0 +1,36 @@
+name: Publish themes release
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/release-themes.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create or refresh themes-1
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          ls -l downloads/themes
+          if gh release view themes-1 >/dev/null 2>&1; then
+            gh release edit themes-1 --title "主题包 v1 · 四套可下载" --notes-file downloads/themes/RELEASE_NOTES.md
+          else
+            gh release create themes-1 --title "主题包 v1 · 四套可下载" --notes-file downloads/themes/RELEASE_NOTES.md
+          fi
+          gh release upload themes-1 \
+            downloads/themes/snowline.zip \
+            downloads/themes/fjord.zip \
+            downloads/themes/gorge.zip \
+            downloads/themes/goldenfield.zip \
+            downloads/themes/SHA256SUMS.txt \
+            --clobber
+          gh release view themes-1 --json url,assets --jq '.url, (.assets[] | "\(.name) \(.size)")'
