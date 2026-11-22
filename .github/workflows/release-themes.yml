@@ -5,6 +5,8 @@ on:
   push:
     paths:
       - '.github/workflows/release-themes.yml'
+      - 'downloads/themes/*.zip'
+      - 'downloads/themes/RELEASE_NOTES.md'
 
 permissions:
   contents: write
