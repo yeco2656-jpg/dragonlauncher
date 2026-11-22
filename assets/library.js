@@ -41,6 +41,11 @@
     return parseInt(m[1], 10) * 10000 + parseInt(m[2], 10) * 100 + parseInt(m[3], 10);
   }
 
+  // 作品库只收 "vX.Y.Z" 形式的启动器版本；主题包等附属 Release 不进这张表。
+  function isVersionTag(tag) {
+    return /^v\d+\.\d+\.\d+(?:[-.][0-9A-Za-z.-]*)?$/.test(String(tag || ""));
+  }
+
   // 版本号大的在前；版本号相同（比如主包和增量包）再按发布时间。
   function sortByVersionDesc(items) {
     return items.slice().sort(function (a, b) {
@@ -116,7 +121,7 @@
       .then(function (response) { return response.ok ? response.json() : null; })
       .catch(function () { return null; })
       .then(function (latest) {
-        if (latest && latest.tag_name) latestTag = latest.tag_name;
+        if (latest && latest.tag_name && isVersionTag(latest.tag_name)) latestTag = latest.tag_name;
         return fetch(listUrl, { headers: API_HEADERS });
       })
       .then(function (response) {
@@ -129,6 +134,7 @@
         var items = [];
         list.forEach(function (release) {
           if (!release || release.draft) return;
+          if (!isVersionTag(release.tag_name)) return;
           if (!latestTag && !release.prerelease) latestTag = release.tag_name;
           (release.assets || []).forEach(function (asset) {
             if (!/\.(zip|jar|exe|7z|rar|tar|gz)$/i.test(asset.name)) return;

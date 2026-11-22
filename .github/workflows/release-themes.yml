@@ -24,9 +24,9 @@ jobs:
           set -e
           ls -l downloads/themes
           if gh release view themes-1 >/dev/null 2>&1; then
-            gh release edit themes-1 --title "主题包 v1 · 四套可下载" --notes-file downloads/themes/RELEASE_NOTES.md
+            gh release edit themes-1 --title "主题包 v1 · 四套可下载" --notes-file downloads/themes/RELEASE_NOTES.md --latest=false
           else
-            gh release create themes-1 --title "主题包 v1 · 四套可下载" --notes-file downloads/themes/RELEASE_NOTES.md
+            gh release create themes-1 --title "主题包 v1 · 四套可下载" --notes-file downloads/themes/RELEASE_NOTES.md --latest=false
           fi
           gh release upload themes-1 \
             downloads/themes/snowline.zip \
