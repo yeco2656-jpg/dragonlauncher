@@ -317,52 +317,27 @@
       <div class="section-head reveal">
         <p class="kicker">公共作品库</p>
         <h2>你传，我传，<br>放在同一个地方。</h2>
-        <p class="section-sub">这不是只有几个固定下载按钮的页面。仓库里的 <code>packages/</code> 是双方共用的上传目录，网站会自动把里面的文件列出来；访客只能下载。</p>
+        <p class="section-sub">每发一个新版本，就多挂一个 Release 附件；这个区会自动把它列成卡片——哪一版、多大、哪天发的都写在卡上。谁发都不用改代码，刷新页面就能看到。</p>
       </div>
 
       <div class="upload-panel reveal">
         <div>
-          <h3>上传自己的启动器 / 整合包 / 主题包</h3>
-          <p>用 GitHub 网页上传，拖进 <code>packages/</code> 即可；文件上限 100 MB。更大的文件走 Releases，仍然可以从这里链过去。</p>
-          <p class="hint">第一次用：仓库主人把朋友加成 collaborator；之后双方都能上传，不用改代码、不用开服务器。</p>
+          <h3>发一版新的，对方刷新就能下</h3>
+          <p>两条路：① GitHub 网页进「Releases → Draft a new release」，起一个新 tag，把 zip 拖进附件，点 Publish；② 在本地跑 <code>上传新版本.ps1</code>，一条命令完成打 tag、建 Release、上传和校验表更新。</p>
+          <p class="hint">第一次用：仓库主人把朋友加成 collaborator 并接受邀请；之后各发各的版本，互不覆盖。</p>
         </div>
         <div class="upload-actions">
-          <a class="btn btn-primary" id="uploadLink" href="https://github.com/yeco2656-jpg/dragonlauncher/upload/main/packages" target="_blank" rel="noopener">上传作品</a>
+          <a class="btn btn-primary" id="uploadLink" href="https://github.com/yeco2656-jpg/dragonlauncher/releases/new" target="_blank" rel="noopener">发新版本</a>
           <a class="btn btn-ghost" id="collabLink" href="https://github.com/yeco2656-jpg/dragonlauncher/settings/access" target="_blank" rel="noopener">邀请朋友</a>
         </div>
       </div>
 
-      <div class="library-grid" id="libraryGrid">
-        <article class="library-card">
-          <span class="badge">联机增强版</span>
-          <h3>DragonLauncher-v0.6.0.zip</h3>
-          <p>v0.6.0 · 45.8 MB · 当前推荐</p>
-          <a href="https://github.com/yeco2656-jpg/dragonlauncher/releases/download/v0.6.0/DragonLauncher-v0.6.0.zip">从 Release 下载</a>
-        </article>
-        <article class="library-card">
-          <span class="badge badge-muted">主题库版</span>
-          <h3>DragonLauncher-v0.4.0.zip</h3>
-          <p>v0.4.0 · 45.7 MB · 三套主题</p>
-          <a href="https://github.com/yeco2656-jpg/dragonlauncher/releases/download/v0.4.0/DragonLauncher-v0.4.0.zip">从 Release 下载</a>
-        </article>
-        <article class="library-card">
-          <span class="badge badge-muted">朋友原版</span>
-          <h3>DragonLauncher-v0.1.0.zip</h3>
-          <p>v0.1.0 · 40.9 MB · 未修改</p>
-          <a href="https://github.com/yeco2656-jpg/dragonlauncher/releases/download/v0.1.0/DragonLauncher-v0.1.0.zip">从 Release 下载</a>
-        </article>
-        <article class="library-card">
-          <span class="badge badge-muted">增量更新</span>
-          <h3>DragonLauncher-friend-0.2.0-update.zip</h3>
-          <p>v0.2.0 增量包 · 23.3 MB · app.jar / runtime / 自动更新.bat</p>
-          <a href="https://github.com/yeco2656-jpg/dragonlauncher/releases/download/v0.2.0/DragonLauncher-friend-0.2.0-update.zip">从 Release 下载</a>
-        </article>
-      </div>
-      <p class="library-status" id="libraryStatus">正在读取仓库里的 packages/ …</p>
+      <div class="library-grid" id="libraryGrid"></div>
+      <p class="library-status" id="libraryStatus">正在读取版本库 …</p>
 
       <div class="library-how reveal">
-        <p><strong>怎么互补：</strong>把包放进 <code>packages/</code> 后，把文件名和版本写在提交说明里；对方从卡片下载，解压后对比 <code>app/app.jar</code> 和 <code>version.txt</code>，就能知道各自改了什么。</p>
-        <p><strong>为什么不是上传站后端：</strong>GitHub Pages 只能托管静态文件，不能接收 POST 上传。所以上传入口放在仓库目录，下载入口放在 Pages；这是不租服务器、又能让双方都写入的最短路径。</p>
+        <p><strong>版本怎么接力：</strong>每人发版时用一个新 tag（比如 <code>v0.7.0-朋友</code>），卡片按时间倒序，谁最新一眼看得出；下载后对比 <code>app/app.jar</code> 和 <code>version.txt</code>，就知道各自改了什么。</p>
+        <p><strong>为什么这样最省事：</strong>GitHub Pages 只能托管静态文件，不能收 POST 上传。把「版本」放在 Releases、把「展示」放在 Pages，既不租服务器，也不用每次改 HTML；附件也不占仓库体积。</p>
       </div>
     </section>
 
@@ -397,8 +372,16 @@
           <p>原版自带的精简 Java runtime 里没有 <code>jdk.crypto.ec</code>，在部分网络环境下无法完成 TLS 握手；还缺 <code>java.logging</code>，进游戏可能报 <code>NoClassDefFoundError</code>。v0.2.0 之后的版本把运行时和模块补齐了。</p>
         </details>
         <details class="reveal">
+          <summary>我想发一个新版本，最少几步？</summary>
+          <p>网页上四步：仓库首页点「Releases」→「Draft a new release」→ 填一个新 tag（如 <code>v0.7.0-friend</code>）并上传 zip → 点 Publish。几秒后刷新网站，作品库就会多一张卡。装了 gh 的话，跑 <code>上传新版本.ps1 -ZipPath 包.zip -Tag v0.7.0-friend</code> 更省事。</p>
+        </details>
+        <details class="reveal">
+          <summary>国内网络打不开 GitHub 或下载很慢怎么办？</summary>
+          <p>先「换解析」：把 <code>github.com</code> 指到 <code>140.82.114.3</code>（管理员改 hosts，仓库里的 <code>工具\修GitHub连接.ps1</code> 会自动挑一个能通的 IP）。还不行就用命令行下载，它走 <code>api.github.com</code>，在国内一般能通：<code>gh release download v0.6.0 --repo yeco2656-jpg/dragonlauncher</code>。页面本身托管在 <code>github.io</code>，通常能打开。</p>
+        </details>
+        <details class="reveal">
           <summary>我可以上传自己的东西吗？</summary>
-          <p>可以，但需要仓库主人先把你加成 collaborator。上传到 <code>packages/</code>，网站会自动列出；建议文件名写「作者-版本-一句话说明.zip」，并在提交说明里写清改了什么。主题包也可以放在这里发给朋友。</p>
+          <p>可以，但需要仓库主人先把你加成 collaborator 并接受邀请。正式版本走 Releases，会自动成卡；<code>packages/</code> 留作草稿区，临时放个包也会出现在列表末尾，但它会占仓库体积，建议只做中转。</p>
         </details>
         <details class="reveal">
           <summary>支持 Microsoft 正版账号登录吗？</summary>
@@ -434,5 +417,6 @@
   </footer>
 
   <script src="assets/site.js"></script>
+  <script src="assets/library.js"></script>
 </body>
 </html>

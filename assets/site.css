@@ -302,6 +302,7 @@ h1 em {
   scroll-margin-top: 88px;
 }
 .no-reveal .reveal { opacity: 1; transform: none; transition: none; }
+.no-reveal .hero { min-height: 640px; }
 .section-head { max-width: 760px; margin-bottom: 52px; }
 .kicker {
   margin: 0 0 16px;
