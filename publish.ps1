@@ -14,7 +14,7 @@ if (-not $remote) {
     throw "没有配置 origin。先创建 GitHub 仓库，再执行：git remote add origin git@github.com:yeco2656-jpg/dragonlauncher.git"
 }
 
-foreach ($file in @("downloads\DragonLauncher-修版.zip", "downloads\DragonLauncher-朋友原版.zip", "index.html")) {
+foreach ($file in @("index.html", "downloads\SHA256SUMS.txt", "downloads\themes\SHA256SUMS.txt")) {
     if (-not (Test-Path -LiteralPath $file)) {
         throw "缺少文件：$file"
     }

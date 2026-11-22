@@ -1,14 +1,14 @@
 # 龙裔启动器网站
 
 > 静态站，无构建步骤。入口 `index.html`。
-> 更新时间：2026-11-22
+> 更新时间：2026-11-23（v0.8.0 体验收口版）
 > 线上：<https://yeco2656-jpg.github.io/dragonlauncher/>（仓库 <https://github.com/yeco2656-jpg/dragonlauncher>，Pages 已开：main / root，HTTPS 强制）
 
 ## 一、是什么
 
 给 DragonLauncher 修版和朋友原版做的下载站。**白色模式**：浅灰白底、真实日出雪山照片、白色实体卡片、橙色强调，带缓慢 Ken Burns 和 Canvas 火星粒子；不依赖外部 CDN、字体或框架。
 
-所有 zip 都不进仓库，改挂在 GitHub Release（v0.1.0 – v0.6.0，另含朋友 0.2.0 增量包），`downloads/` 只留 `SHA256SUMS.txt`；本地双击 `index.html` 仍能浏览页面，下载按钮会跳到 Release 附件。
+所有 zip 都不进仓库，改挂在 GitHub Release（v0.1.0 – v0.8.0，另含朋友 0.2.0 增量包与 `themes-1` 主题包），`downloads/` 只留 `SHA256SUMS.txt` 和四套主题 zip；本地双击 `index.html` 仍能浏览页面，下载按钮会跳到 Release 附件。
 
 「公共作品库」区不写死卡片：`assets/library.js` 现场读 `repos/.../releases` 接口，把每个 Release 的附件按版本号倒序排成卡片。以后**谁发一版新 Release，网页刷新就自动多一张卡，不用改 HTML**；接口读不到时退回内置清单，下载按钮仍可用。`packages/` 只留 `.gitkeep` 当草稿区占位。
 
@@ -53,11 +53,14 @@ git add -A; git commit -m "update site"; git push origin main
 │   ├── site.css             # 全部样式
 │   ├── site.js              # reveal / embers / 复制 SHA
 │   ├── library.js           # 作品库：读 Releases 自动生成卡片
-│   ├── preview-v6.png       # v0.6 首页截图 1080×680
+│   ├── preview-v8.png       # v0.8 首屏截图 1266×783
+│   ├── skin-v8.png / english-v8.png / settings-v8*.png / themes-v8*.png
+│   ├── goldenfield-v8.png
 │   ├── sunrise.jpg          # Victor Sobrado / Unsplash
 │   └── favicon.svg
 ├── downloads\
-│   └── SHA256SUMS.txt       # 6 个包的 SHA256（zip 本体都在 Releases）
+│   ├── SHA256SUMS.txt       # 6 个版本包 + 1 个增量包的 SHA256（zip 本体都在 Releases）
+│   └── themes\              # 四套主题 zip + RELEASE_NOTES.md + SHA256SUMS.txt
 ├── packages\
 │   └── .gitkeep             # 草稿区占位，保持上传目录存在
 ├── 上传新版本.ps1            # 发版一条龙：tag / Release / 附件 / 校验表
@@ -65,16 +68,16 @@ git add -A; git commit -m "update site"; git push origin main
 └── README.md
 ```
 
-页面区块：Hero → 简介 → 特性 → 界面展示 → 下载 → FAQ → 结尾。
+页面区块：Hero → 简介 → 特性 → 界面展示 → v0.8 更新 → 主题库 → 下载 → 作品库 → FAQ → 结尾。
 
 ## 四、上线限制与常见问题
 
 - **单文件**：Git 限制 100 MB；版本 zip 全部走 Releases，仓库里不再放大文件。
 - **仓库体积**：约 8 MB（只有站点资源，zip 全在 Releases）；Pages 站点上限 1 GB。
-- **带宽**：Pages 约 100 GB/月软限制；45.7 MB 的包大约能撑 2200 次下载，朋友之间足够。流量大了再迁 Releases 或对象存储。
+- **带宽**：Pages 约 100 GB/月软限制；34.3 MB 的包大约能撑 2900 次下载，朋友之间足够。流量大了再迁 Releases 或对象存储。
 - **公开性**：Public 仓库意味着任何人有链接都能下载；不要往 zip 里塞个人配置。
 - **自定义域名**：Pages 设置里加 CNAME；本仓库暂未配置。
-- **发新版本**：跑 `.\上传新版本.ps1 -ZipPath 包.zip -Tag v0.7.0`，或网页 `Releases → Draft a new release`。作品库会自动多一张卡，不用改 HTML。**不要往仓库里放 zip**：git 历史会膨胀，清理要 `filter-branch` + force push。
+- **发新版本**：跑 `.\上传新版本.ps1 -ZipPath 包.zip -Tag v0.9.0`，或网页 `Releases → Draft a new release`。作品库会自动多一张卡，不用改 HTML。**不要往仓库里放 zip**：git 历史会膨胀，清理要 `filter-branch` + force push。
 - **图片授权**：`sunrise.jpg` 为 Unsplash License，摄影 Victor Sobrado；页脚已署名。
 
 ## 五、维护
