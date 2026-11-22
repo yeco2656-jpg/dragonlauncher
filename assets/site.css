@@ -5,9 +5,9 @@
   --surface-2: #151d26;
   --line: rgba(255, 255, 255, 0.10);
   --line-soft: rgba(255, 255, 255, 0.06);
-  --text: #f2f6fa;
-  --text-soft: #c7d2de;
-  --muted: #8e9cab;
+  --text: #e8eff7;
+  --text-soft: #b9c7d6;
+  --muted: #8290a0;
   --accent: #ff6b3d;
   --accent-deep: #e95326;
   --accent-pale: #ffb08a;
@@ -46,13 +46,13 @@ button { font: inherit; }
   align-items: center;
   gap: 36px;
   padding: 0 max(24px, calc((100vw - var(--max)) / 2));
-  background: rgba(7, 10, 14, 0.86);
+  background: rgba(7, 10, 14, 0.70);
   border-bottom: 1px solid transparent;
   transition: background 180ms ease, border-color 180ms ease;
 }
 
 .site-header.scrolled {
-  background: rgba(7, 10, 14, 0.96);
+  background: rgba(7, 10, 14, 0.92);
   border-bottom-color: var(--line-soft);
 }
 
@@ -133,8 +133,8 @@ button { font: inherit; }
   inset: 0;
   z-index: 1;
   background:
-    linear-gradient(90deg, rgba(5, 7, 10, 0.94) 0%, rgba(5, 7, 10, 0.78) 36%, rgba(5, 7, 10, 0.10) 70%, rgba(5, 7, 10, 0.22) 100%),
-    linear-gradient(180deg, rgba(5, 7, 10, 0.55) 0%, transparent 28%, transparent 72%, rgba(5, 7, 10, 0.82) 100%);
+    linear-gradient(90deg, rgba(5, 7, 10, 0.78) 0%, rgba(5, 7, 10, 0.56) 36%, rgba(5, 7, 10, 0.08) 70%, rgba(5, 7, 10, 0.20) 100%),
+    linear-gradient(180deg, rgba(5, 7, 10, 0.48) 0%, transparent 28%, transparent 72%, rgba(5, 7, 10, 0.74) 100%);
 }
 
 .embers {
@@ -176,7 +176,7 @@ h1 {
   line-height: 1.02;
   letter-spacing: -0.05em;
   font-weight: 800;
-  color: #fff;
+  color: #f3f7fb;
 }
 h1 em {
   font-style: normal;
