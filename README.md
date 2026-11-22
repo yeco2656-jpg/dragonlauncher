@@ -5,7 +5,7 @@
 
 ## 一、是什么
 
-给 DragonLauncher 修版和朋友原版做的下载站。深色底、真实日出雪山照片、实色卡片、橙色强调，带缓慢 Ken Burns 和 Canvas 火星粒子；不依赖外部 CDN、字体或框架。
+给 DragonLauncher 修版和朋友原版做的下载站。**白色模式**：浅灰白底、真实日出雪山照片、白色实体卡片、橙色强调，带缓慢 Ken Burns 和 Canvas 火星粒子；不依赖外部 CDN、字体或框架。
 
 两个 zip 直接放在 `downloads/`，所以本地双击 `index.html` 就能下载；上传 GitHub 后也能直接通过 Pages 下载。
 
@@ -80,4 +80,4 @@ git log --oneline
 git checkout <上一个 commit> -- .
 ```
 
-改颜色：`assets/site.css` 顶部 `:root` 的 `--accent`、`--bg`、`--surface`。改照片：替换 `assets/sunrise.jpg`，CSS 里 `.hero-bg` 的 `url("sunrise.jpg")` 不用动。
+改颜色：`assets/site.css` 顶部 `:root` 和末尾“白色模式”里的 `--accent`、`--bg`、`--surface`。改照片：替换 `assets/sunrise.jpg`，CSS 里 `.hero-bg` 的 `url("sunrise.jpg")` 不用动。

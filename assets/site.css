@@ -510,3 +510,40 @@ h2 {
   .btn, .feature-card { transition: none; }
 }
 
+
+/* ---------- 白色模式（v12） ---------- */
+:root {
+  --bg: #f3f6fa;
+  --bg-soft: #e9eff6;
+  --surface: #ffffff;
+  --surface-2: #f3f6fa;
+  --line: rgba(15, 23, 42, 0.12);
+  --line-soft: rgba(15, 23, 42, 0.08);
+  --text: #111827;
+  --text-soft: #475569;
+  --muted: #6b7787;
+  --accent-pale: #b23a12;
+}
+body { background: #f3f6fa; color: var(--text); }
+.site-header { background: rgba(248, 250, 252, 0.82); }
+.site-header.scrolled { background: rgba(248, 250, 252, 0.95); }
+.brand-mark { background: #fff1ec; }
+.hero::before {
+  background:
+    linear-gradient(90deg, rgba(248, 250, 252, 0.93) 0%, rgba(248, 250, 252, 0.72) 36%, rgba(248, 250, 252, 0.08) 70%, rgba(248, 250, 252, 0.18) 100%),
+    linear-gradient(180deg, rgba(248, 250, 252, 0.40) 0%, transparent 30%, transparent 72%, rgba(248, 250, 252, 0.60) 100%);
+}
+h1 { color: #111827; }
+.hero-foot { color: rgba(15, 23, 42, 0.55); }
+.hero-line { background: rgba(15, 23, 42, 0.14); }
+.shot-frame { background: #ffffff; border-color: rgba(15, 23, 42, 0.12); box-shadow: 0 30px 80px rgba(15, 23, 42, 0.18); }
+.shot-chip { background: #ffffff; border-color: rgba(255, 107, 61, 0.34); box-shadow: 0 14px 40px rgba(15, 23, 42, 0.16); }
+.btn-ghost { background: #ffffff; }
+.download-card.featured { background: #fff8f4; }
+.badge { background: #fff1ec; color: #b23a12; }
+.badge-muted { background: #eef2f7; color: #64748b; }
+.warning { background: #fff6f1; color: #9a3412; }
+.sha-row code { color: #64748b; }
+.site-footer { background: #eef2f7; }
+.footer-credit, .footer-year { color: #64748b; }
+.showcase-shot img { box-shadow: 0 24px 60px rgba(15, 23, 42, 0.16); }
