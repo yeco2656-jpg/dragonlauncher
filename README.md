@@ -45,7 +45,7 @@ git push -u origin main
 │   ├── sunrise.jpg          # Victor Sobrado / Unsplash
 │   └── favicon.svg
 ├── downloads\
-│   ├── DragonLauncher-修版.zip     47.2 MB
+│   ├── DragonLauncher-修版.zip     41.5 MB
 │   ├── DragonLauncher-朋友原版.zip 40.9 MB
 │   └── SHA256SUMS.txt
 ├── publish.ps1
@@ -57,8 +57,8 @@ git push -u origin main
 ## 四、上线限制与常见问题
 
 - **单文件**：Git 限制 100 MB；两个 zip 都低于 50 MB，不需要 LFS。
-- **仓库体积**：约 88 MB，主要是两个 zip；Pages 站点上限 1 GB。
-- **带宽**：Pages 约 100 GB/月软限制；47 MB 的包大约能撑 2000 次下载，朋友之间足够。流量大了再迁 Releases 或对象存储。
+- **仓库体积**：约 82 MB，主要是两个 zip；Pages 站点上限 1 GB。
+- **带宽**：Pages 约 100 GB/月软限制；41 MB 的包大约能撑 2400 次下载，朋友之间足够。流量大了再迁 Releases 或对象存储。
 - **公开性**：Public 仓库意味着任何人有链接都能下载；不要往 zip 里塞个人配置。
 - **自定义域名**：Pages 设置里加 CNAME；本仓库暂未配置。
 - **更新安装包**：替换 `downloads/` 里的 zip，改 `index.html` 里的文件大小和 SHA，再 commit/push。
