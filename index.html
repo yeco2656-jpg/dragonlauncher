@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>龙裔启动器 · 和朋友，在同一个世界</title>
+  <meta name="description" content="DragonLauncher 龙裔启动器：为远程联机准备的 Minecraft 启动器。下载修版或朋友原版，和朋友选同一个版本，开一个房间。">
+  <meta name="theme-color" content="#070a0e">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#top" aria-label="龙裔启动器首页">
+      <span class="brand-mark">龍</span>
+      <span class="brand-text">龙裔启动器<small>DRAGONLAUNCHER</small></span>
+    </a>
+    <nav class="site-nav" aria-label="主导航">
+      <a href="#features">特性</a>
+      <a href="#download">下载</a>
+      <a href="#faq">常见问题</a>
+      <a href="#about">关于</a>
+    </nav>
+    <a class="header-cta" href="#download">获取启动器</a>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <canvas class="embers" id="embers" aria-hidden="true"></canvas>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span>FRIEND-BUILT · FOR DISTANT FRIENDS</p>
+          <h1>和朋友，<br><em>在同一个世界。</em></h1>
+          <p class="hero-lead">一个为远程联机准备的 Minecraft 启动器。选版本、装整合包、开房间，剩下的交给它。</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="downloads/DragonLauncher-修版.zip" download>下载修版 <span>41.5 MB</span></a>
+            <a class="btn btn-ghost" href="#download">查看两个版本</a>
+          </div>
+          <div class="hero-meta">
+            <span>Windows 10 / 11</span>
+            <span>免安装 · 解压即用</span>
+            <span>内置联机组件</span>
+          </div>
+        </div>
+
+        <div class="hero-shot">
+          <div class="shot-frame">
+            <img src="assets/preview.png" alt="龙裔启动器修版的实际界面截图：深色仪表盘、真实山景背景和橙色启动按钮" width="1080" height="680">
+          </div>
+          <div class="shot-caption"><span class="live-dot"></span>修版 v0.2.0 · 实际运行界面</div>
+          <div class="shot-chip">
+            <strong>房间已创建</strong>
+            <span>等待朋友加入</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-foot">
+        <span>SCROLL TO EXPLORE</span>
+        <span class="hero-line"></span>
+        <span>REAL PHOTO · REAL UI</span>
+      </div>
+    </section>
+
+    <section class="section intro" id="about">
+      <div class="section-head reveal">
+        <p class="kicker">不是又一个启动器</p>
+        <h2>把“联机”这件事，<br>从折腾变成一步。</h2>
+      </div>
+      <div class="intro-grid">
+        <p class="intro-lead reveal">龙裔启动器由朋友自制，原本只是给自己人用。我们把它修到能稳定下载、能启动、能开房间，再把两个版本一起放到这里。</p>
+        <div class="intro-stats reveal">
+          <div><strong>02</strong><span>可选安装包</span></div>
+          <div><strong>900+</strong><span>可拉取版本</span></div>
+          <div><strong>01</strong><span>房间，和朋友</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section features" id="features">
+      <div class="section-head reveal">
+        <p class="kicker">它到底能做什么</p>
+        <h2>少一点配置，<br>多一点一起玩的时间。</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card reveal">
+          <span class="feature-no">01</span>
+          <h3>远程联机，不折腾端口</h3>
+          <p>内置 Terracotta。一个人创建房间，另一个人输入房间号加入，不需要公网 IP，也不用在路由器上做端口映射。</p>
+          <p class="feature-note">双方需要同一个游戏版本。</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="feature-no">02</span>
+          <h3>版本与依赖，自动补齐</h3>
+          <p>原版、Forge、Fabric、NeoForge 的库和 native 由启动器下载。首次启动会慢一点，之后直接进游戏。</p>
+          <p class="feature-note">依赖下载失败时会给出具体文件。</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="feature-no">03</span>
+          <h3>整合包，装完就能开</h3>
+          <p>导入整合包时保留它自己的版本和模组目录，不再把共享 mods 强行搬来搬去，减少“装完却进不去”的情况。</p>
+          <p class="feature-note">支持常见整合包格式。</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="feature-no">04</span>
+          <h3>崩溃了，先告诉你为什么</h3>
+          <p>启动失败后读取本次生成的崩溃报告，定位到具体模组、Java 版本或内存问题，而不是只弹一句“启动失败”。</p>
+          <p class="feature-note">日志保留在安装目录的 logs 文件夹。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section showcase">
+      <div class="showcase-copy reveal">
+        <p class="kicker">界面，重新做过</p>
+        <h2>真实的山，<br>不是 AI 画的龙。</h2>
+        <p>去掉廉价的玻璃拟态和过暗的紫色调，换成实色面板、真实摄影背景和一枚余烬橙。文字该亮的地方亮，照片该透的地方透。</p>
+        <ul class="check-list">
+          <li>48 秒 Ken Burns 缓慢移动，不晃眼</li>
+          <li>Canvas 火星粒子，低帧率设备自动降级</li>
+          <li>正文 / 提示 / 标题三级对比度</li>
+        </ul>
+      </div>
+      <figure class="showcase-shot reveal">
+        <img src="assets/preview.png" alt="修版主界面：左侧导航、中央启动面板、右侧真实山景照片" width="1080" height="680" loading="lazy">
+        <figcaption>1080 × 680 · 修版实际运行截图</figcaption>
+      </figure>
+    </section>
+
+    <section class="section download" id="download">
+      <div class="section-head reveal">
+        <p class="kicker">下载</p>
+        <h2>两个版本，<br>选你需要的那个。</h2>
+        <p class="section-sub">修版是推荐版本；朋友原版保留原样，方便对照或你自己继续改。两个压缩包都小于 50 MB。</p>
+      </div>
+
+      <div class="download-grid">
+        <article class="download-card featured reveal">
+          <div class="card-top">
+            <span class="badge">推荐</span>
+            <span class="version">v0.2.0-fixed</span>
+          </div>
+          <h3>龙裔启动器 · 修版</h3>
+          <p class="card-desc">修复下载 SSL、Java 运行时、Forge/Fabric 库与 native、联机轮询等已知问题。新界面也在这里。</p>
+          <dl class="file-meta">
+            <div><dt>文件</dt><dd>DragonLauncher-修版.zip</dd></div>
+            <div><dt>大小</dt><dd>41.5 MB</dd></div>
+            <div><dt>系统</dt><dd>Windows 10 / 11 x64</dd></div>
+          </dl>
+          <a class="btn btn-primary btn-wide" href="downloads/DragonLauncher-修版.zip" download>下载修版</a>
+          <div class="sha-row">
+            <code>12817035F2CEEA0ABF9D5AD7BA81ED5653DB18101891F3C547E3FC54F5F13DAC</code>
+            <button class="copy-btn" type="button" data-copy="12817035F2CEEA0ABF9D5AD7BA81ED5653DB18101891F3C547E3FC54F5F13DAC">复制 SHA256</button>
+          </div>
+        </article>
+
+        <article class="download-card reveal">
+          <div class="card-top">
+            <span class="badge badge-muted">原样保留</span>
+            <span class="version">v0.2.0-original</span>
+          </div>
+          <h3>朋友原版</h3>
+          <p class="card-desc">朋友最初发来的安装包，未做修改。适合对照，或者你想从原始版本继续改。</p>
+          <p class="warning">原版 runtime 缺少 jdk.crypto.ec，部分网络下首次下载可能 SSL 握手失败。遇到时请换修版。</p>
+          <dl class="file-meta">
+            <div><dt>文件</dt><dd>DragonLauncher-朋友原版.zip</dd></div>
+            <div><dt>大小</dt><dd>40.9 MB</dd></div>
+            <div><dt>系统</dt><dd>Windows 10 / 11 x64</dd></div>
+          </dl>
+          <a class="btn btn-ghost btn-wide" href="downloads/DragonLauncher-朋友原版.zip" download>下载原版</a>
+          <div class="sha-row">
+            <code>3BF80FDC55C1B8424C1809677DDD94EE74E0D4EC9CFACBCB0723A946CCDE5566</code>
+            <button class="copy-btn" type="button" data-copy="3BF80FDC55C1B8424C1809677DDD94EE74E0D4EC9CFACBCB0723A946CCDE5566">复制 SHA256</button>
+          </div>
+        </article>
+      </div>
+
+      <div class="download-foot reveal">
+        <p>校验文件：<a href="downloads/SHA256SUMS.txt" download>SHA256SUMS.txt</a>。解压后双击 <code>DragonLauncher.exe</code>，不要放进 <code>C:\Program Files</code>。</p>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="section-head reveal">
+        <p class="kicker">常见问题</p>
+        <h2>先看这几条，<br>能省十分钟。</h2>
+      </div>
+      <div class="faq-list">
+        <details class="reveal">
+          <summary>第一次启动为什么要等很久？</summary>
+          <p>启动器要下载所选版本的依赖库、native 和资源文件。1.20.1 的资源有几百 MB，取决于网络。下载完成后再次启动会直接进入。</p>
+        </details>
+        <details class="reveal">
+          <summary>联机需要双方都装这个启动器吗？</summary>
+          <p>建议双方都用修版，并选择完全相同的游戏版本。一个人创建房间，另一个人输入房间号。版本不一致是联机失败最常见的原因。</p>
+        </details>
+        <details class="reveal">
+          <summary>为什么原版下载会 SSL 握手失败？</summary>
+          <p>原版自带的精简 Java runtime 里没有 <code>jdk.crypto.ec</code>，在部分网络环境下无法完成 TLS 握手。修版把这个模块补上了，并增加了 Java 运行时的回退链。</p>
+        </details>
+        <details class="reveal">
+          <summary>Windows 提示“未知发布者”怎么办？</summary>
+          <p>这是未签名的个人项目，Windows SmartScreen 会提示。确认文件来自这个页面、SHA256 对得上，再选择“仍要运行”。</p>
+        </details>
+        <details class="reveal">
+          <summary>支持 Microsoft 正版账号登录吗？</summary>
+          <p>当前版本使用离线用户名启动，适合单机和朋友之间的 Terracotta 联机；暂不支持 Microsoft 账号登录，因此不能进入需要正版验证的公共服务器。和朋友玩自己的世界不受影响。</p>
+        </details>
+        <details class="reveal">
+          <summary>启动器会把游戏装到哪里？</summary>
+          <p>默认在启动器自己的目录下，不会写入系统目录。你可以在设置里改游戏路径；整合包和版本会跟着那个路径走。</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="section closing" id="closing">
+      <div class="closing-inner reveal">
+        <p class="kicker">KEEP IN TOUCH</p>
+        <h2>朋友在远方，<br>世界可以很近。</h2>
+        <div class="closing-actions">
+          <a class="btn btn-primary" href="downloads/DragonLauncher-修版.zip" download>下载修版</a>
+          <a class="btn btn-ghost" href="#top">回到顶部</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <span class="brand-mark small">龍</span>
+      <div><strong>龙裔启动器</strong><span>DRAGONLAUNCHER</span></div>
+    </div>
+    <p class="footer-copy">朋友自制，社区维护。与 Mojang Studios / Microsoft 无关联。Minecraft 是 Mojang 的商标。</p>
+    <p class="footer-credit">背景摄影：Dima Ibrahim / Unsplash · Unsplash License</p>
+    <p class="footer-year">© <span id="year">2026</span> DragonLauncher</p>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>
