@@ -649,7 +649,8 @@ html[data-theme="light"] .theme-shots-duo img { box-shadow: 0 24px 60px rgba(15,
   display: inline-flex; align-items: center; justify-content: center;
   min-height: 34px; padding: 0 14px; border-radius: 8px;
   border: 1px solid var(--line); background: var(--surface-2); color: var(--text);
-  font: 600 11px/1 var(--sans, inherit); text-decoration: none; cursor: pointer;
+  font-family: var(--font); font-size: 11px; font-weight: 600; line-height: 1;
+  text-decoration: none; cursor: pointer;
   transition: border-color 150ms ease, color 150ms ease, background 150ms ease;
 }
 .theme-btn:hover { border-color: rgba(255, 107, 61, 0.55); color: var(--accent-pale); }
