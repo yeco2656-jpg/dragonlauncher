@@ -8,7 +8,7 @@
 
 给 DragonLauncher 修版和朋友原版做的下载站。**白色模式**：浅灰白底、真实日出雪山照片、白色实体卡片、橙色强调，带缓慢 Ken Burns 和 Canvas 火星粒子；不依赖外部 CDN、字体或框架。
 
-四个 zip 直接放在 `downloads/`（主题库版 45.7 MB / 双主题版 44.1 MB / 修版 41.5 MB / 原版 40.9 MB），所以本地双击 `index.html` 就能下载；线上 Pages 同样可直接下载。
+四个 zip 不再进仓库，改挂在 GitHub Release（v0.1.0 – v0.6.0），`downloads/` 只留 `SHA256SUMS.txt`；本地双击 `index.html` 仍能浏览页面，下载按钮会跳到 Release 附件。
 
 ## 二、怎么用
 
@@ -54,11 +54,7 @@ git add -A; git commit -m "update site"; git push origin main
 │   ├── sunrise.jpg          # Victor Sobrado / Unsplash
 │   └── favicon.svg
 ├── downloads\
-│   ├── DragonLauncher-主题库版.zip   45.7 MB（v0.4.0）
-│   ├── DragonLauncher-双主题版.zip   44.1 MB（v0.3.0）
-│   ├── DragonLauncher-修版.zip       41.5 MB
-│   ├── DragonLauncher-朋友原版.zip   40.9 MB（v0.1.0）
-│   └── SHA256SUMS.txt
+│   └── SHA256SUMS.txt          # 五个版本 zip 的 SHA256（zip 本体在 Releases）
 ├── publish.ps1
 └── README.md
 ```
@@ -67,8 +63,8 @@ git add -A; git commit -m "update site"; git push origin main
 
 ## 四、上线限制与常见问题
 
-- **单文件**：Git 限制 100 MB；四个 zip 最大 45.7 MB，不需要 LFS。
-- **仓库体积**：约 192 MB（21 文件），主要是四个 zip 与 `packages/`；Pages 站点上限 1 GB。
+- **单文件**：Git 限制 100 MB；版本 zip 全部走 Releases，仓库里不再放大文件。
+- **仓库体积**：约 29 MB（站点资源 + `packages/` 里的更新包）；Pages 站点上限 1 GB。
 - **带宽**：Pages 约 100 GB/月软限制；45.7 MB 的包大约能撑 2200 次下载，朋友之间足够。流量大了再迁 Releases 或对象存储。
 - **公开性**：Public 仓库意味着任何人有链接都能下载；不要往 zip 里塞个人配置。
 - **自定义域名**：Pages 设置里加 CNAME；本仓库暂未配置。
