@@ -1,9 +1,9 @@
 {
   "version": "0.8.2",
-  "notes": "启动时自动检查新版本，有更新会弹窗提示并打开发布页；皮肤页新增 Slim（3px 手臂）模型切换。旧配置里空着的更新源会自动补成官方地址。",
+  "notes": "启动时自动检查新版本，有更新会弹窗提示并打开发布页；皮肤页新增 Slim（3px 手臂）模型切换；设置页可单独关闭自动检查。旧配置里空着的更新源会自动补成官方地址。",
   "downloadUrl": "https://github.com/yeco2656-jpg/dragonlauncher/releases/download/v0.8.2/DragonLauncher-v0.8.2.zip",
   "page": "https://yeco2656-jpg.github.io/dragonlauncher/",
-  "sha256": "75C9783E9E7DF98264D68CE5B91C9AA499427F2131ED370186C5DE8C8051E7FD",
-  "bytes": 35963970,
+  "sha256": "958D7C8C37414B37A5E42F4EFCF43AF2D5ED9BC721C99BF3F75E6D002CA8492A",
+  "bytes": 35964064,
   "publishedAt": "2026-11-23"
 }
