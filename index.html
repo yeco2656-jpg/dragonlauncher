@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>龙裔启动器 · v0.8 体验收口版与公共作品库</title>
-  <meta name="description" content="DragonLauncher 龙裔启动器：蓝盾 Radmin 联机、陶瓦联机、UPnP 直连、3D 皮肤、实例分组、截图编辑、主题库与外置登录，为和朋友一起玩准备的 Minecraft 启动器。下载 v0.8.2 自动更新版或历史版本；主题与角色皮肤都可以在线安装。">
+  <meta name="description" content="DragonLauncher 龙裔启动器：蓝盾 Radmin 联机、陶瓦联机、UPnP 直连、3D 皮肤、实例分组、截图编辑、主题库与外置登录，为和朋友一起玩准备的 Minecraft 启动器。下载 v0.8.3 一键更新版或历史版本；主题与角色皮肤都可以在线安装。">
   <meta name="theme-color" content="#f3f6fa">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/site.css">
@@ -45,9 +45,9 @@
         <div class="hero-copy">
           <p class="eyebrow"><span></span>FRIEND-BUILT · FOR DISTANT FRIENDS</p>
           <h1>和朋友，<br><em>在同一个世界。</em></h1>
-          <p class="hero-lead">一个为远程联机准备的 Minecraft 启动器。选版本、装整合包、开房间；v0.8.2 起启动时自动检查新版本，皮肤页支持 3px 细手臂模型；主题与角色皮肤可以直接从下载站装进启动器。</p>
+          <p class="hero-lead">一个为远程联机准备的 Minecraft 启动器。选版本、装整合包、开房间；v0.8.3 支持一键更新、SHA256 校验、自动替换与失败回滚，皮肤页支持 3px 细手臂模型；主题与角色皮肤可以直接从下载站装进启动器。</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="https://github.com/yeco2656-jpg/dragonlauncher/releases/download/v0.8.2/DragonLauncher-v0.8.2.zip">下载 v0.8.2 <span>34.3 MB</span></a>
+            <a class="btn btn-primary" href="https://github.com/yeco2656-jpg/dragonlauncher/releases/download/v0.8.3/DragonLauncher-v0.8.3.zip">下载 v0.8.3 <span>34.6 MB</span></a>
             <a class="btn btn-ghost" href="#themes">先看十二套主题</a>
           </div>
           <div class="hero-meta">
@@ -489,14 +489,33 @@
     <section class="section download" id="download">
       <div class="section-head reveal">
         <p class="kicker">下载</p>
-        <h2>八个版本，<br>从新到旧都留着。</h2>
-        <p class="section-sub">v0.8.2 自动更新版是当前推荐；v0.8.1 皮肤修复版、v0.8.0 体验收口版、v0.7.0 实例管理版（补发）、v0.6.0 联机增强版、v0.4.0 主题库版、v0.3.0 双主题版和 v0.1.0 朋友原版作为历史版本保留。压缩包都挂在 GitHub Release 上，解压即用。</p>
+        <h2>九个版本，<br>从新到旧都留着。</h2>
+        <p class="section-sub">v0.8.3 一键更新版是当前推荐；v0.8.2 自动更新版、v0.8.1 皮肤修复版、v0.8.0 体验收口版、v0.7.0 实例管理版（补发）、v0.6.0 联机增强版、v0.4.0 主题库版、v0.3.0 双主题版和 v0.1.0 朋友原版作为历史版本保留。压缩包都挂在 GitHub Release 上，解压即用。</p>
       </div>
 
       <div class="download-grid">
         <article class="download-card featured reveal">
           <div class="card-top">
-            <span class="badge">推荐 · 自动更新</span>
+            <span class="badge">推荐 · 一键更新</span>
+            <span class="version">v0.8.3</span>
+          </div>
+          <h3>龙裔启动器 · 一键更新版</h3>
+          <p class="card-desc">发现新版本后可以直接点「立即更新」：下载 zip、校验文件大小与 SHA256，退出启动器，由包内「自动更新.bat」替换 app.jar 与 version.txt，成功后自动重启；任一步失败会回滚旧文件。启动器换了一枚极简龙图标，exe、任务栏和窗口图标一起更新；Slim 3px 手臂与设置页开关保留。</p>
+          <dl class="file-meta">
+            <div><dt>文件</dt><dd>DragonLauncher-v0.8.3.zip</dd></div>
+            <div><dt>大小</dt><dd>34.6 MB</dd></div>
+            <div><dt>系统</dt><dd>Windows 10 / 11 x64</dd></div>
+          </dl>
+          <a class="btn btn-primary btn-wide" href="https://github.com/yeco2656-jpg/dragonlauncher/releases/download/v0.8.3/DragonLauncher-v0.8.3.zip">从 Release 下载</a>
+          <div class="sha-row">
+            <code>DFFC39AB180A82B9F357D5268BD9B09A6CFD7282449988B118B4E7ADEB26E254</code>
+            <button class="copy-btn" type="button" data-copy="DFFC39AB180A82B9F357D5268BD9B09A6CFD7282449988B118B4E7ADEB26E254">复制 SHA256</button>
+          </div>
+        </article>
+
+        <article class="download-card reveal">
+          <div class="card-top">
+            <span class="badge badge-muted">历史版本</span>
             <span class="version">v0.8.2</span>
           </div>
           <h3>龙裔启动器 · 自动更新版</h3>
@@ -506,7 +525,7 @@
             <div><dt>大小</dt><dd>34.3 MB</dd></div>
             <div><dt>系统</dt><dd>Windows 10 / 11 x64</dd></div>
           </dl>
-          <a class="btn btn-primary btn-wide" href="https://github.com/yeco2656-jpg/dragonlauncher/releases/download/v0.8.2/DragonLauncher-v0.8.2.zip">从 Release 下载</a>
+          <a class="btn btn-ghost btn-wide" href="https://github.com/yeco2656-jpg/dragonlauncher/releases/download/v0.8.2/DragonLauncher-v0.8.2.zip">从 Release 下载</a>
           <div class="sha-row">
             <code>958D7C8C37414B37A5E42F4EFCF43AF2D5ED9BC721C99BF3F75E6D002CA8492A</code>
             <button class="copy-btn" type="button" data-copy="958D7C8C37414B37A5E42F4EFCF43AF2D5ED9BC721C99BF3F75E6D002CA8492A">复制 SHA256</button>
