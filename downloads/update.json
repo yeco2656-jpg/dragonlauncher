@@ -1,9 +1,9 @@
 {
-  "version": "0.8.1",
-  "notes": "皮肤保存修好了：不再把透明底刷成白色；主题页新增「在线主题库」，皮肤页新增「在线皮肤库」，直接从下载站装主题和角色皮肤。",
-  "downloadUrl": "https://github.com/yeco2656-jpg/dragonlauncher/releases/download/v0.8.1/DragonLauncher-v0.8.1.zip",
+  "version": "0.8.2",
+  "notes": "启动时自动检查新版本，有更新会弹窗提示并打开发布页；皮肤页新增 Slim（3px 手臂）模型切换。旧配置里空着的更新源会自动补成官方地址。",
+  "downloadUrl": "https://github.com/yeco2656-jpg/dragonlauncher/releases/download/v0.8.2/DragonLauncher-v0.8.2.zip",
   "page": "https://yeco2656-jpg.github.io/dragonlauncher/",
-  "sha256": "CBBAC99BDC08E247ADA37D5CC7693A7204AE444F985A344E64F0C845788F8BED",
-  "bytes": 36007281,
+  "sha256": "75C9783E9E7DF98264D68CE5B91C9AA499427F2131ED370186C5DE8C8051E7FD",
+  "bytes": 35963970,
   "publishedAt": "2026-11-23"
 }
