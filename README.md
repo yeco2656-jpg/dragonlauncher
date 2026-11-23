@@ -1,14 +1,14 @@
 # 龙裔启动器网站
 
 > 静态站，无构建步骤。入口 `index.html`。
-> 更新时间：2026-11-23（v0.8.3 一键更新版）
+> 更新时间：2026-11-23（v0.8.4 导航修复版）
 > 线上：<https://yeco2656-jpg.github.io/dragonlauncher/>（仓库 <https://github.com/yeco2656-jpg/dragonlauncher>，Pages 已开：main / root，HTTPS 强制）
 
 ## 一、是什么
 
 给 DragonLauncher 修版和朋友原版做的下载站。**白色模式**：浅灰白底、真实日出雪山照片、白色实体卡片、橙色强调，带缓慢 Ken Burns 和 Canvas 火星粒子；不依赖外部 CDN、字体或框架。
 
-版本 zip 挂在 GitHub Release（v0.1.0 – v0.8.3，另含朋友 0.2.0 增量包）；主题与角色皮肤不再发独立 Release，全部放在 `downloads/themes/`（九套 zip）和 `downloads/skins/`（六张 PNG），清单是 `themes.json` / `skins.json`，启动器的「在线主题库」「在线皮肤库」直接读这两份。
+版本 zip 挂在 GitHub Release（v0.1.0 – v0.8.4，另含朋友 0.2.0 增量包）；主题与角色皮肤不再发独立 Release，全部放在 `downloads/themes/`（九套 zip）和 `downloads/skins/`（六张 PNG），清单是 `themes.json` / `skins.json`，启动器的「在线主题库」「在线皮肤库」直接读这两份。
 
 「公共作品库」区不写死卡片：`assets/library.js` 现场读 `repos/.../releases` 接口，把每个 Release 的附件按版本号倒序排成卡片。以后**谁发一版新 Release，网页刷新就自动多一张卡，不用改 HTML**；接口读不到时退回内置清单，下载按钮仍可用。`packages/` 只留 `.gitkeep` 当草稿区占位。
 
@@ -53,7 +53,7 @@ git add -A; git commit -m "update site"; git push origin main
 │   ├── site.css             # 全部样式
 │   ├── site.js              # reveal / embers / 复制 SHA
 │   ├── library.js           # 作品库：读 Releases 自动生成卡片
-│   ├── preview-v8.png       # v0.8 首屏截图 1266×783
+│   ├── preview-v84.png      # v0.8.4 首屏截图 1080×680（左侧导航可滚动）
 │   ├── skin-v8.png / english-v8.png / settings-v8*.png / themes-v8*.png
 │   ├── goldenfield-v8.png
 │   ├── sunrise.jpg          # Victor Sobrado / Unsplash

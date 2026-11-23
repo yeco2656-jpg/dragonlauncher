@@ -1,9 +1,9 @@
 {
-  "version": "0.8.3",
-  "notes": "发现新版本可直接点「立即更新」：下载 zip、校验大小与 SHA256，退出启动器后由包内「自动更新.bat」替换 app.jar 与 version.txt，成功后自动重启；任一步失败会回滚旧文件。启动器换用极简龙图标，exe、任务栏与窗口图标一起更新。",
-  "downloadUrl": "https://github.com/yeco2656-jpg/dragonlauncher/releases/download/v0.8.3/DragonLauncher-v0.8.3.zip",
+  "version": "0.8.4",
+  "notes": "左侧导航栏现在能上下滚了：品牌和版本号固定，中间 14 个导航项装进独立滚动区，窗口再矮也够得着「设置」。默认 1080×680 窗口原本底部四项被裁，现在滚轮一格往下走约 29px，四格到底；其余功能（一键更新、极简龙图标、Slim 3px 手臂、在线主题/皮肤库）与 v0.8.3 相同。",
+  "downloadUrl": "https://github.com/yeco2656-jpg/dragonlauncher/releases/download/v0.8.4/DragonLauncher-v0.8.4.zip",
   "page": "https://yeco2656-jpg.github.io/dragonlauncher/",
-  "sha256": "DFFC39AB180A82B9F357D5268BD9B09A6CFD7282449988B118B4E7ADEB26E254",
-  "bytes": 36238343,
+  "sha256": "43A9B83E3A9D1517DE1A8B799177682966DF4E6442FC461532518D30EC7D7839",
+  "bytes": 36292485,
   "publishedAt": "2026-11-23"
 }
