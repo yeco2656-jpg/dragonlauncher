@@ -10,7 +10,8 @@
 
   var API_HEADERS = { "Accept": "application/vnd.github+json" };
   var FALLBACK = [
-    { name: "DragonLauncher-v0.8.4.zip", tag: "v0.8.4", size: 36292485, date: "2026-11-23T04:59:00Z", latest: true },
+    { name: "DragonLauncher-v0.8.6.zip", tag: "v0.8.6", size: 36301550, date: "2026-11-23T09:42:52Z", latest: true },
+    { name: "DragonLauncher-v0.8.4.zip", tag: "v0.8.4", size: 36292485, date: "2026-11-23T04:59:00Z" },
     { name: "DragonLauncher-v0.8.3.zip", tag: "v0.8.3", size: 36238343, date: "2026-11-23T04:27:00Z" },
     { name: "DragonLauncher-v0.8.2.zip", tag: "v0.8.2", size: 35964064, date: "2026-11-23T03:43:00Z" },
     { name: "DragonLauncher-v0.8.1.zip", tag: "v0.8.1", size: 36007281, date: "2026-11-23T03:03:00Z" },

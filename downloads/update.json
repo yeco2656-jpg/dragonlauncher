@@ -1,9 +1,9 @@
 {
-  "version": "0.8.4",
-  "notes": "左侧导航栏现在能上下滚了：品牌和版本号固定，中间 14 个导航项装进独立滚动区，窗口再矮也够得着「设置」。默认 1080×680 窗口原本底部四项被裁，现在滚轮一格往下走约 29px，四格到底；其余功能（一键更新、极简龙图标、Slim 3px 手臂、在线主题/皮肤库）与 v0.8.3 相同。",
-  "downloadUrl": "https://github.com/yeco2656-jpg/dragonlauncher/releases/download/v0.8.4/DragonLauncher-v0.8.4.zip",
+  "version": "0.8.6",
+  "notes": "点击左侧导航不再先卡一下：14 个页面的实例扫描、目录遍历、图片解码全部挪到后台 IO 池，游戏库/内容/工具/版本/联机页改用缓存与懒加载，内容页 6 个页签、联机页 4 个子页只在点到时才建；导航按钮支持 150 ms 悬停预建（4 核以上），页面淡入从 220 ms 缩到 120 ms。实测 14 页首次最高 135 ms、缓存页再次 6–42 ms，MainView 构造 2.27 s → 0.34 s。同包补上 v0.8.5 的更新链路修复：下载不再先发 HEAD、cfg 强制 IPv4、自动更新脚本连 cfg 一起替换与回滚。",
+  "downloadUrl": "https://github.com/yeco2656-jpg/dragonlauncher/releases/download/v0.8.6/DragonLauncher-v0.8.6.zip",
   "page": "https://yeco2656-jpg.github.io/dragonlauncher/",
-  "sha256": "43A9B83E3A9D1517DE1A8B799177682966DF4E6442FC461532518D30EC7D7839",
-  "bytes": 36292485,
+  "sha256": "281C5537566E4924331BAA40891DD08B807BA5C48E2394B0F2E5151530C29997",
+  "bytes": 36301550,
   "publishedAt": "2026-11-23"
 }
