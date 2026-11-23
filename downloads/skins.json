@@ -1,0 +1,66 @@
+{
+  "updated": "2026-11-23",
+  "note": "全部 Classic 4px 手臂，64×64 RGBA",
+  "skins": [
+    {
+      "id": "dragonfire",
+      "name": "龙裔·赤鳞",
+      "model": "classic",
+      "desc": "黑红龙鳞外套、琥珀眼、赤铜滚边",
+      "file": "https://yeco2656-jpg.github.io/dragonlauncher/downloads/skins/dragonfire.png",
+      "preview": "https://yeco2656-jpg.github.io/dragonlauncher/assets/skins/dragonfire.png",
+      "bytes": 951,
+      "sha256": "0CE037C018A7D089816165FA9FC45ABF8BF4F1E306B9B3F998FA87FBE2BF7FA5"
+    },
+    {
+      "id": "aurora",
+      "name": "极光旅人",
+      "model": "classic",
+      "desc": "深海蓝外套、极光渐变、青绿围巾",
+      "file": "https://yeco2656-jpg.github.io/dragonlauncher/downloads/skins/aurora.png",
+      "preview": "https://yeco2656-jpg.github.io/dragonlauncher/assets/skins/aurora.png",
+      "bytes": 976,
+      "sha256": "1D82C8AD74D696A1F24DA1599E02C1341BA02272BFC177B346D4ECA853DAA1ED"
+    },
+    {
+      "id": "sakura",
+      "name": "樱花剑客",
+      "model": "classic",
+      "desc": "黑发粉饰、米白和服、莓红腰带",
+      "file": "https://yeco2656-jpg.github.io/dragonlauncher/downloads/skins/sakura.png",
+      "preview": "https://yeco2656-jpg.github.io/dragonlauncher/assets/skins/sakura.png",
+      "bytes": 862,
+      "sha256": "C83678771849D6E4766308FD54668C4DF5CEF69435BC2C99DCAF06259DDD5C80"
+    },
+    {
+      "id": "desert",
+      "name": "沙海游侠",
+      "model": "classic",
+      "desc": "沙色兜帽、赭石披风、蓝围巾",
+      "file": "https://yeco2656-jpg.github.io/dragonlauncher/downloads/skins/desert.png",
+      "preview": "https://yeco2656-jpg.github.io/dragonlauncher/assets/skins/desert.png",
+      "bytes": 814,
+      "sha256": "45349A22E614D2A1CA94FE42B57A602F51483517B6562B141E85D4B904B1773A"
+    },
+    {
+      "id": "neon",
+      "name": "霓虹黑客",
+      "model": "classic",
+      "desc": "黑色夹克、青色面罩、霓虹走线",
+      "file": "https://yeco2656-jpg.github.io/dragonlauncher/downloads/skins/neon.png",
+      "preview": "https://yeco2656-jpg.github.io/dragonlauncher/assets/skins/neon.png",
+      "bytes": 871,
+      "sha256": "EA1608C0A8D0573AEF05EC908D9BCA7F9FE871DA7DF2B789878D78031D236DC9"
+    },
+    {
+      "id": "cloud",
+      "name": "云海隐者",
+      "model": "classic",
+      "desc": "白发白须、云白长袍、金边",
+      "file": "https://yeco2656-jpg.github.io/dragonlauncher/downloads/skins/cloud.png",
+      "preview": "https://yeco2656-jpg.github.io/dragonlauncher/assets/skins/cloud.png",
+      "bytes": 872,
+      "sha256": "FF7CAB055BD2B67675AB87300DA33C883B1C6EAF59BB1E566DCFA0890D1E08B8"
+    }
+  ]
+}

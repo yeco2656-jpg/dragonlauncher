@@ -1,0 +1,106 @@
+{
+  "updated": "2026-11-23",
+  "count": 9,
+  "base": "https://yeco2656-jpg.github.io/dragonlauncher/downloads/themes/",
+  "themes": [
+    {
+      "id": "aurora",
+      "name": "极光冻湖",
+      "subtitle": "原创生成 · 冰湖极光",
+      "author": "DragonLauncher 主题工坊",
+      "tag": "极光",
+      "defaultMode": "dark",
+      "zip": "https://yeco2656-jpg.github.io/dragonlauncher/downloads/themes/aurora.zip",
+      "bytes": 220220,
+      "sha256": "1F1EBC1FF1F606D22B8EC2616A461AC5A6038DFAE4D1CFCB488C6950A7044420"
+    },
+    {
+      "id": "cloudsea",
+      "name": "云海孤峰",
+      "subtitle": "原创生成 · 日出云海",
+      "author": "DragonLauncher 主题工坊",
+      "tag": "云海",
+      "defaultMode": "dark",
+      "zip": "https://yeco2656-jpg.github.io/dragonlauncher/downloads/themes/cloudsea.zip",
+      "bytes": 136622,
+      "sha256": "E41AAE711CB5C54168E6CDE5EC7F91346A8BD1D63E4CCAF4AB4A005050067C10"
+    },
+    {
+      "id": "desert",
+      "name": "赤沙星夜",
+      "subtitle": "原创生成 · 沙丘银河",
+      "author": "DragonLauncher 主题工坊",
+      "tag": "星空",
+      "defaultMode": "dark",
+      "zip": "https://yeco2656-jpg.github.io/dragonlauncher/downloads/themes/desert.zip",
+      "bytes": 235985,
+      "sha256": "09596B52C9C6493EEAD2E2C7F4BD89696AE6F53100FCB587B51300E089D3EB23"
+    },
+    {
+      "id": "fjord",
+      "name": "远海松林",
+      "subtitle": "Unsplash 摄影 · 冷杉与海湾",
+      "author": "Paul Jarvis / Unsplash",
+      "tag": "摄影",
+      "defaultMode": "dark",
+      "zip": "https://yeco2656-jpg.github.io/dragonlauncher/downloads/themes/fjord.zip",
+      "bytes": 378385,
+      "sha256": "7FED2D8928E2A38DE9EB7D5A0FF9832FAE05E091F83C81227ECDCD63D99D4A3B"
+    },
+    {
+      "id": "goldenfield",
+      "name": "暮草逆光",
+      "subtitle": "Unsplash 摄影 · 日落草坡",
+      "author": "Alejandro Escamilla / Unsplash",
+      "tag": "摄影",
+      "defaultMode": "light",
+      "zip": "https://yeco2656-jpg.github.io/dragonlauncher/downloads/themes/goldenfield.zip",
+      "bytes": 189543,
+      "sha256": "C925F033CFFD5573066172A143A213CE9CCCD1799628A8B966ABD05316D377F1"
+    },
+    {
+      "id": "gorge",
+      "name": "峡谷飞瀑",
+      "subtitle": "Unsplash 摄影 · 苔石与瀑布",
+      "author": "Paul Jarvis / Unsplash",
+      "tag": "摄影",
+      "defaultMode": "dark",
+      "zip": "https://yeco2656-jpg.github.io/dragonlauncher/downloads/themes/gorge.zip",
+      "bytes": 462128,
+      "sha256": "55A7124C061F293E6E3390EAF8DFB81ADF17DAEF82D45F162493B5E80F3744F1"
+    },
+    {
+      "id": "neon",
+      "name": "雨夜霓虹",
+      "subtitle": "原创生成 · 雨巷霓虹",
+      "author": "DragonLauncher 主题工坊",
+      "tag": "赛博",
+      "defaultMode": "dark",
+      "zip": "https://yeco2656-jpg.github.io/dragonlauncher/downloads/themes/neon.zip",
+      "bytes": 284001,
+      "sha256": "CB839FE8AB33C16E8065939107560C1F0B44094F46BA167110B65C4C5FB87ADC"
+    },
+    {
+      "id": "sakura",
+      "name": "樱花溪谷",
+      "subtitle": "原创生成 · 樱溪黄昏",
+      "author": "DragonLauncher 主题工坊",
+      "tag": "樱色",
+      "defaultMode": "dark",
+      "zip": "https://yeco2656-jpg.github.io/dragonlauncher/downloads/themes/sakura.zip",
+      "bytes": 414900,
+      "sha256": "8C54E9F87D93537F543482A5551F63B02A661DF53BD27E8D8C6242DF652B2AB4"
+    },
+    {
+      "id": "snowline",
+      "name": "雪线以上",
+      "subtitle": "Unsplash 摄影 · 高山雪脊",
+      "author": "Go Wild / Unsplash",
+      "tag": "摄影",
+      "defaultMode": "light",
+      "zip": "https://yeco2656-jpg.github.io/dragonlauncher/downloads/themes/snowline.zip",
+      "bytes": 752143,
+      "sha256": "F94179674088D6F7FF0B2B332E4EE83D817170258A1A95BEA4A703691032D5FC"
+    }
+  ]
+}

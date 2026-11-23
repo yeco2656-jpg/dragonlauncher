@@ -1,0 +1,9 @@
+{
+  "version": "0.8.1",
+  "notes": "皮肤保存修好了：不再把透明底刷成白色；主题页新增「在线主题库」，皮肤页新增「在线皮肤库」，直接从下载站装主题和角色皮肤。",
+  "downloadUrl": "https://github.com/yeco2656-jpg/dragonlauncher/releases/download/v0.8.1/DragonLauncher-v0.8.1.zip",
+  "page": "https://yeco2656-jpg.github.io/dragonlauncher/",
+  "sha256": "CBBAC99BDC08E247ADA37D5CC7693A7204AE444F985A344E64F0C845788F8BED",
+  "bytes": 36007281,
+  "publishedAt": "2026-11-23"
+}

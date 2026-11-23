@@ -643,6 +643,8 @@ html[data-theme="light"] .theme-shots-duo img { box-shadow: 0 24px 60px rgba(15,
 .theme-card { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; }
 .theme-card-media { position: relative; }
 .theme-card-media img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
+.theme-card-media.skin-media { background: #0d1117; }
+.theme-card-media.skin-media img { object-fit: contain; }
 .theme-card-tag { position: absolute; left: 12px; top: 12px; padding: 4px 9px; border-radius: 999px; border: 1px solid rgba(255, 255, 255, 0.18); background: rgba(7, 10, 14, 0.60); color: #ffd9c8; font-size: 10px; letter-spacing: 0.08em; }
 .theme-card-body { padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 7px; flex: 1; }
 .theme-card-body h3 { margin: 0; font-size: 17px; letter-spacing: -0.01em; }
