@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>龙裔启动器 · v0.8.6 点击不再卡顿版与公共作品库</title>
-  <meta name="description" content="DragonLauncher 龙裔启动器：蓝盾 Radmin 联机、陶瓦联机、UPnP 直连、3D 皮肤、实例分组、截图编辑、主题库与外置登录，为和朋友一起玩准备的 Minecraft 启动器。下载 v0.8.6 点击不再卡顿版或历史版本；主题与角色皮肤都可以在线安装。">
+  <meta name="description" content="DragonLauncher 龙裔启动器：蓝盾 Radmin 联机、陶瓦联机、UPnP 直连、3D 皮肤、实例分组、截图编辑、主题库与外置登录，为和朋友一起玩准备的 Minecraft 启动器。下载 v0.8.6 点击不再卡顿版或历史版本，另发安卓手机版（arm64 APK）；主题与角色皮肤都可以在线安装。">
   <meta name="theme-color" content="#f3f6fa">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/site.css">
@@ -49,6 +49,7 @@
           <div class="hero-actions">
             <a class="btn btn-primary" href="https://github.com/yeco2656-jpg/dragonlauncher/releases/download/v0.8.6/DragonLauncher-v0.8.6.zip">下载 v0.8.6 <span>34.6 MB</span></a>
             <a class="btn btn-ghost" href="#themes">先看十二套主题</a>
+            <a class="btn btn-ghost" href="#android">手机版 APK <span>167 MB</span></a>
           </div>
           <div class="hero-meta">
             <span>Windows 10 / 11</span>
@@ -489,8 +490,8 @@
     <section class="section download" id="download">
       <div class="section-head reveal">
         <p class="kicker">下载</p>
-        <h2>十一个版本，<br>从新到旧都留着。</h2>
-        <p class="section-sub">v0.8.6 点击不再卡顿版是当前推荐；v0.8.4 导航修复版、v0.8.3 一键更新版、v0.8.2 自动更新版、v0.8.1 皮肤修复版、v0.8.0 体验收口版、v0.7.0 实例管理版（补发）、v0.6.0 联机增强版、v0.4.0 主题库版、v0.3.0 双主题版和 v0.1.0 朋友原版作为历史版本保留。压缩包都挂在 GitHub Release 上，解压即用。</p>
+        <h2>十一个电脑版，<br>外加一个手机版。</h2>
+        <p class="section-sub">v0.8.6 点击不再卡顿版是当前推荐；v0.8.4 导航修复版、v0.8.3 一键更新版、v0.8.2 自动更新版、v0.8.1 皮肤修复版、v0.8.0 体验收口版、v0.7.0 实例管理版（补发）、v0.6.0 联机增强版、v0.4.0 主题库版、v0.3.0 双主题版和 v0.1.0 朋友原版作为历史版本保留。压缩包都挂在 GitHub Release 上，解压即用。手机版是另一条线：基于 FCL 1.3.4.8 定制的 arm64 APK，包名独立，可以和电脑版同时用。</p>
       </div>
 
       <div class="download-grid">
@@ -510,6 +511,25 @@
           <div class="sha-row">
             <code>A8D0690F4D4B0B9062B5DBAE623F39E15C84E6A0087E6E71FFB4465F2D8A95AF</code>
             <button class="copy-btn" type="button" data-copy="A8D0690F4D4B0B9062B5DBAE623F39E15C84E6A0087E6E71FFB4465F2D8A95AF">复制 SHA256</button>
+          </div>
+        </article>
+
+        <article class="download-card reveal" id="android">
+          <div class="card-top">
+            <span class="badge">手机版 · Android</span>
+            <span class="version">1.3.4.8</span>
+          </div>
+          <h3>龙裔启动器 · 手机版（arm64）</h3>
+          <p class="card-desc">电脑版是 JavaFX 写的，搬不进手机；手机要跑 Minecraft Java 版，底下得有一整套 JVM、LWJGL 转译、渲染器和触屏映射。这一版基于 Fold Craft Launcher 1.3.4.8 定制，游戏内核没动，改的是应用名、包名和预置：包名 <code>com.dragonlauncher.mobile</code>，和官方 FCL 装在同一台手机上也不冲突。全版本、Forge、NeoForge、Fabric、Quilt、OptiFine、内置 Java、模组与整合包、资源包与光影、存档、微软 / 离线 / 外置登录、虚拟鼠标与自定义按键、主题、渲染器插件、Terracotta 联机都在。首次启动要联网下载游戏资源，手机建议 6 GB 内存以上；低端机用 1.20.1 加优化模组，别直接上最新版。</p>
+          <dl class="file-meta">
+            <div><dt>文件</dt><dd>dragonlauncher-1.3.4.8-arm64.apk</dd></div>
+            <div><dt>大小</dt><dd>167.1 MB</dd></div>
+            <div><dt>系统</dt><dd>Android 8.0+ · arm64-v8a</dd></div>
+          </dl>
+          <a class="btn btn-primary btn-wide" href="https://github.com/yeco2656-jpg/dragonlauncher-android/releases/download/v1.3.4.8-arm64/dragonlauncher-1.3.4.8-arm64.apk">从 Release 下载 APK</a>
+          <div class="sha-row">
+            <code>EE9B35A50688BF3FB764054AC0311ED25C5E00C11AA47478A3C0A888C7769798</code>
+            <button class="copy-btn" type="button" data-copy="EE9B35A50688BF3FB764054AC0311ED25C5E00C11AA47478A3C0A888C7769798">复制 SHA256</button>
           </div>
         </article>
 
@@ -763,6 +783,10 @@
         <details class="reveal">
           <summary>联机需要双方都装这个启动器吗？</summary>
           <p>建议双方都用 v0.8.0，并选择完全相同的游戏版本。一个人创建房间，另一个人输入房间号。版本不一致是联机失败最常见的原因；主题不同不影响联机。</p>
+        </details>
+        <details class="reveal">
+          <summary>手机版和电脑版是什么关系，能一起联机吗？</summary>
+          <p>手机版是另发的一个安装包（Android 8.0 以上、只含 arm64），底层是 FCL，和电脑版的 JavaFX 不是同一套代码，版本号也不通用，别拿 1.3.4.8 去对 v0.8.6。联机可以一起玩：电脑端在「联机」页开一个 Terracotta 房间，手机端加入同一个房间；或者两端各装 EasyTier、填同一个网络名。没有正版账号时把 <code>online-mode</code> 关掉，用离线名进。两端模组要完全一致，这是联机失败最常见的原因。</p>
         </details>
         <details class="reveal">
           <summary>为什么朋友原版会 SSL 握手失败？</summary>
